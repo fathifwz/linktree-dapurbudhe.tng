@@ -1,0 +1,99 @@
+/* Pengaturan Dasar & Latar Belakang */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #8b0000, hsl(357, 37%, 46%));
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px 0;
+}
+
+/* Kontainer Utama */
+.container {
+  max-width: 680px;
+  width: 90%;
+  text-align: center;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Bagian Profil */
+.profile img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+}
+
+.profile h1 {
+  font-size: 1.8rem;
+  margin: 15px 0 5px 0;
+  font-weight: 700;
+}
+
+.profile p {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 30px;
+  opacity: 0.9;
+}
+
+/* Tombol Link Jualan */
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Jarak antar tombol */
+}
+
+.link-item {
+  background: rgba(255, 255, 255, 0.9);
+  color: #333;
+  padding: 15px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.link-item:hover {
+  transform: scale(1.04);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.link-item i {
+  font-size: 1.2rem;
+}
+
+/* Ikon Sosial Media */
+.socials {
+  margin-top: 30px;
+}
+
+.socials a {
+  color: white;
+  font-size: 1.8rem;
+  margin: 0 15px;
+  text-decoration: none;
+  opacity: 0.8;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.socials a:hover {
+  opacity: 1;
+  transform: translateY(-3px);
+}
